@@ -13,7 +13,6 @@ import org.springframework.web.client.RestTemplate;
 public class RestClientController {
     @Autowired
     RestTemplate restTemplate;
-    
 
     @GetMapping(value = {"/relami-code"})
     public ResponseEntity<RelamiCode> getRelamiCode(RestTemplate restTemplate) {
